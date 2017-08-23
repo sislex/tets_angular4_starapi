@@ -1,0 +1,9 @@
+<div class="container">
+    <app-header></app-header>
+    <app-tabbar></app-tabbar>
+    <app-search></app-search>
+    <div *ngIf="resourcesService.resActive && resourcesService.resActive.obj.results">
+        <app-data></app-data>
+        <app-pagination></app-pagination>
+    </div>
+</div>
